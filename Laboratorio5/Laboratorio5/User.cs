@@ -15,18 +15,18 @@ namespace Laboratorio5
         public void OnEmailSent(object source, EmailSentEventArgs l)
         {
             Thread.Sleep(2000);
-            Console.WriteLine("Verificar Usuario? ('Y'/'N')");
+            Console.WriteLine("Verificar Correo? ('Y'/'N')");
             string v = Console.ReadLine();
             if (v == "Y")
             {
                 EmailVerified(this, new EmailVerifiedEventArgs());
 
             }
-            else
+            if (v == "N")
             {
 
             }
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
 
         }
     }

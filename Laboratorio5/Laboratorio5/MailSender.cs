@@ -12,6 +12,7 @@ namespace Laboratorio5
         {
             Thread.Sleep(2000);
             Console.WriteLine($"\nCorreo enviado a {e.Email}: \n Gracias por registrarte, {e.Username}!\n Por favor, para poder verificar tu correo, has click en: {e.VerificationLink}\n");
+            OnEmailSent();
             Thread.Sleep(2000);
         }
 

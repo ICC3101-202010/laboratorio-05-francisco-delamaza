@@ -41,6 +41,7 @@ namespace Laboratorio5
                     case "Registrarse":
                         Console.Clear();
                         server.Register();
+                        
                         break;
                     case "Cambiar contrasena":
                         Console.Clear();

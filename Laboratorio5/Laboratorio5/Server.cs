@@ -73,6 +73,7 @@ namespace Laboratorio5
             {
                 // Disparamos el evento
                 OnRegistered(usr, psswd, verificationlink: verificationLink, email: email);
+                
             }
             else
             {
