@@ -12,7 +12,7 @@ namespace Laboratorio5
 
         public event EmailVerifiedEventHandler EmailVerified;
 
-        protected virtual void OnEmailSend(object source, EmailSentEventArgs l)
+        public void OnEmailSent(object source, EmailSentEventArgs l)
         {
             Thread.Sleep(2000);
             Console.WriteLine("Verificar Usuario? ('Y'/'N')");
@@ -26,6 +26,7 @@ namespace Laboratorio5
             {
 
             }
+            Thread.Sleep(2000);
 
         }
     }

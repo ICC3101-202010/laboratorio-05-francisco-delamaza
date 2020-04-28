@@ -8,5 +8,6 @@ namespace Laboratorio5
 {
     class EmailVerifiedEventArgs
     {
+
     }
 }

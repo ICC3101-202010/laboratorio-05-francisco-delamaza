@@ -24,13 +24,13 @@ namespace Laboratorio5
         }
         public delegate void EmailSentEventHandler(object source, EmailSentEventArgs args);
 
-        public event EmailSentEventHandler EmailSend;
+        public event EmailSentEventHandler EmailSent;
 
-        protected virtual void OnEmailSend()
+        protected virtual void OnEmailSent()
         {
-            if(EmailSend != null)
+            if(EmailSent != null)
             {
-                EmailSend(this, new EmailSentEventArgs());
+                EmailSent(this, new EmailSentEventArgs());
 
             }
             

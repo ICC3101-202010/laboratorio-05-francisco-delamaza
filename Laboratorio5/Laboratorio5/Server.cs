@@ -121,6 +121,13 @@ namespace Laboratorio5
             }
             return "http://pluscorporation.com/verificar-correo.php?=" + usr + "_" + result;
         }
+        public void OnEmailVerified(object source, EmailVerifiedEventArgs l)
+        {
+            Thread.Sleep(2000);
+            Console.WriteLine($"\nCorreo verificado");
+            Thread.Sleep(2000);
+        }
 
+    
     }
 }
