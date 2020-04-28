@@ -15,11 +15,25 @@ namespace Laboratorio5
             Thread.Sleep(2000);
         }
 
+
         public void OnPasswordChanged(object source, ChangePasswordEventArgs e)
         {
             Thread.Sleep(2000);
             Console.WriteLine($"\nCorreo enviado a {e.Email}:  \n {e.Username}, te notificamos que la contrasena de tu cuenta PlusCorp ha sido cambiada. \n");
             Thread.Sleep(2000);
+        }
+        public delegate void EmailSentEventHandler(object source, EmailSentEventArgs args);
+
+        public event EmailSentEventHandler EmailSend;
+
+        protected virtual void OnEmailSend()
+        {
+            if(EmailSend != null)
+            {
+                EmailSend(this, new EmailSentEventArgs());
+
+            }
+            
         }
     }
 }

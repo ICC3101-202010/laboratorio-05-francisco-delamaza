@@ -121,5 +121,6 @@ namespace Laboratorio5
             }
             return "http://pluscorporation.com/verificar-correo.php?=" + usr + "_" + result;
         }
+
     }
 }
